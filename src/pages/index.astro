@@ -1,114 +1,19 @@
 ---
-import Cart from '../components/Cart.astro';
-import Star from '../icons/Star.astro';
-import StarFull from '../icons/StarFull.astro';
+import Carts from '../components/Carts.astro';
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Header from '../sections/Header.astro';
+import Footer from '../sections/Footer.astro';
 ---
 
 <Layout title="Platzi Food">
-	<Header/>
-	<main
-	>
-	<div id="carts" class="flex w-screen flex-col flex-wrap items-center text-gray-100 sm:flex-row sm:justify-center mt-10">
-		<Cart
-			img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
-			name="Cheese Hamburger"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="4.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 47 reviews</p></Cart
+	<Header />
+	<main>
+		<div
+			id="carts"
+			class="mt-10 flex w-screen flex-col flex-wrap items-center text-gray-100 sm:flex-row sm:justify-center"
 		>
-		<Cart
-			img="https://images.unsplash.com/photo-1528301392571-0dfab3c00216?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Hot Cake"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="3.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 25 reviews</p></Cart
-		>
-		<Cart
-			img="https://images.unsplash.com/photo-1627054248949-21f77275a15f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Hot Dog"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="2.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 70 reviews</p></Cart
-		>
-		<Cart
-			img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Pizza"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="5.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 101 reviews</p></Cart
-		>
-		<Cart
-			img="https://plus.unsplash.com/premium_photo-1694547926001-f2151e4a476b?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Ramen"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="6.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<p class="pl-1 text-orange-400">| 120 reviews</p></Cart
-		>
-		<Cart
-			img="https://images.unsplash.com/photo-1522666257812-173fdc2d11fe?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Pasta"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="3.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 30 reviews</p></Cart
-		>
-		<Cart
-			img="https://images.unsplash.com/photo-1723693407562-bb4fcae76797?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Bandeja Paisa"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="4.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 60 reviews</p></Cart
-		>
-		<Cart
-			img="https://plus.unsplash.com/premium_photo-1664472644125-f12aecccdd52?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			name="Sushi"
-			content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-			price="5.99 USD$"
-			><StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<StarFull size="16" />
-			<Star size="16" />
-			<p class="pl-1 text-orange-400">| 154 reviews</p></Cart
-		>
-	</div>
+			<Carts />
+		</div>
+		<Footer />
 	</main>
-	<Footer/>
 </Layout>
