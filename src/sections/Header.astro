@@ -12,8 +12,13 @@ import Menu from "../icons/Menu.astro";
 	</a>
     <button class="mr-3 sm:mr-4 scale-75"><Menu/></button>
 </header>
-<div id="header"  class="w-screen h-40 bg-primary fixed z-10 top-12 hidden opacity-0">
-    Hola
+<div id="header" class="w-screen h-[7.5rem] bg-primary fixed z-10 top-12 hidden opacity-0 justify-end">
+    <ul class="mr-4 mt-2 text-right flex-col items-end hidden" id="ulItem">
+        <a href="/" class="w-[92%]"><li class="px-2 hover:bg-yellow-600 rounded-xl">Best Foods</li></a>
+        <a href="/" class="w-[100%]"><li class="px-2 hover:bg-yellow-600 rounded-xl">Food Events</li></a>
+        <a href="/" class="w-[78%]"><li class="px-2 hover:bg-yellow-600 rounded-xl">About us</li></a>
+        <a href="/" class="w-[50%]"><li class="px-2 hover:bg-yellow-600 rounded-xl">Menu</li></a>
+    </ul>
 </div>
 <style>
     @keyframes fade-in {
