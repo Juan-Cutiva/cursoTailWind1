@@ -1,0 +1,36 @@
+---
+import Menu from "../icons/Menu.astro";
+---
+
+<header class="flex h-12 w-screen items-center justify-between bg-secondary fixed z-10 top-0">
+	<a href="/">
+		<img
+			src="https://raw.githubusercontent.com/victoryoalli/platzifood/76946dc197de9980017a831db70f42577fce5991/public/images/logo-w.svg"
+			alt="Platzi Food img"
+			class="ml-5 h-8 sm:ml-8"
+		/>
+	</a>
+    <button class="mr-3 sm:mr-4 scale-75"><Menu/></button>
+</header>
+<div id="header"  class="w-screen h-40 bg-primary fixed z-10 top-12 hidden opacity-0">
+    Hola
+</div>
+<style>
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+<script src="../script/header.js"></script>
