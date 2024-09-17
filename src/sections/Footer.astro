@@ -1,3 +1,23 @@
-<footer class="w-screen h-8 bg-red-600 mt-6">
-Hola
+---
+import Ig from '../icons/Ig.astro';
+import TikTok from '../icons/TikTok.astro';
+import X from '../icons/X.astro';
+import YouTube from '../icons/YouTube.astro';
+const size = '28';
+const color = '#1f2937';
+---
+
+<footer class="mt-6 flex h-auto w-screen justify-between bg-primary px-6 py-2">
+	<ul class="text-gray-800">
+		<a href="#"><li class="w-[65%] rounded-xl px-2 hover:bg-yellow-600">Support</li></a>
+		<a href="#"><li class="w-[68%] rounded-xl px-2 hover:bg-yellow-600">About us</li></a>
+		<a href="#"><li class="w-[57%] rounded-xl px-2 hover:bg-yellow-600">Record</li></a>
+		<a href="#"><li class="w-[100%] rounded-xl px-2 hover:bg-yellow-600">Privacy Notice</li></a>
+	</ul>
+	<div class="flex items-center gap-4">
+		<a href="#"><Ig size={size} color={color} /></a>
+		<a href="#"><X size={size} color={color} /></a>
+		<a href="#"><TikTok size={size} color={color} /></a>
+		<a href="#"><YouTube size={size} color={color} /></a>
+	</div>
 </footer>
