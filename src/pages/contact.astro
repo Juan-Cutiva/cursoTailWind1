@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../sections/Footer.astro';
+import Header from '../sections/Header.astro';
+---
+
+<Layout title="Platzi Food Contact">
+	<Header />
+	<main>
+		<div
+			id="form"
+			class="relative top-32 flex w-screen flex-col items-center justify-center gap-4 sm:top-24"
+		>
+			<h1 class="w-80 text-pretty text-center text-2xl text-primary">
+				Get in touch with our great team of chefs and collaborators
+			</h1>
+			<input
+				id="name"
+				type="text"
+				placeholder="Name"
+				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+                autocomplete="name"
+			/>
+			<input
+				id="mail"
+				type="email"
+				placeholder="E-Mail"
+				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+                autocomplete="email"
+			/>
+			<input
+				id="phone"
+				type="tel"
+				placeholder="Phone Number"
+				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+                autocomplete="off"
+			/>
+			<textarea id="textArea" placeholder="Message" class="h-40 w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+			></textarea>
+			<button
+				id="buttonSend"
+				class="w-72 rounded-md bg-primary py-2 text-gray-800 hover:bg-secondary hover:text-zinc-100 active:scale-105 duration-150"
+				>Send</button
+			>
+		</div>
+	</main>
+	<Footer style="position: absolute;  bottom: 0px;" />
+</Layout>
+
+<script src="../script/contact.js"></script>
