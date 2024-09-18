@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from '../sections/Footer.astro';
 import Header from '../sections/Header.astro';
+const style = 'w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500'
 ---
 
 <Layout title="Platzi Food Contact">
@@ -18,21 +19,21 @@ import Header from '../sections/Header.astro';
 				id="name"
 				type="text"
 				placeholder="Name"
-				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+				class={style}
                 autocomplete="name"
 			/>
 			<input
 				id="mail"
 				type="email"
 				placeholder="E-Mail"
-				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+				class={style}
                 autocomplete="email"
 			/>
 			<input
 				id="phone"
 				type="tel"
 				placeholder="Phone Number"
-				class="w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
+				class={style}
                 autocomplete="off"
 			/>
 			<textarea id="textArea" placeholder="Message" class="h-40 w-72 rounded-md pl-2 text-gray-800 focus:outline-yellow-500"
